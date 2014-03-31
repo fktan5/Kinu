@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lovelive_base">#EE1188</color>
+    <color name="hanayo_green">#228844</color>
+    <color name="nozomi_violet">#ff602e83</color>
+    <color name="honoka_orange">#c85034</color>
+    <color name="kotori_gray">#666666</color>
+    <color name="umi_oceanblue">#117fcc</color>
+    <color name="maki_scarett">#ff1020</color>
+    <color name="eri_lightblue">#00ffff</color>
+    <color name="rin_turquoise">#00ffbb</color>
+    <color name="nico_pink">#ff4047</color>
+</resources>
