@@ -7,6 +7,16 @@ public class SchoolIdle {
     private String name;
     private String cv;
 
+    public SchoolIdle(){
+        this.name = "Unseen Idol";
+        this.cv = "Rookie Voice Actior";
+    }
+
+    public SchoolIdle(String name, String cv) {
+        this.name = name;
+        this.cv = cv;
+    }
+
     public String getCv() {
         return cv;
     }
