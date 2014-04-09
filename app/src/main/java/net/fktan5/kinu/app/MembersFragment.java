@@ -25,6 +25,7 @@ public class MembersFragment extends Fragment {
 
     private ViewPager mViewpager;
     private List<SchoolIdle> mIdleList;
+    private PagerTitleStrip mPagerTitleStrip;
 
     public MembersFragment(){}
 
@@ -68,7 +69,7 @@ public class MembersFragment extends Fragment {
 
         @Override
         public CharSequence getPageTitle(int position) {
-            return super.getPageTitle(position);
+            return mIdleList.get(position).getName();
         }
     }
 }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">スクールアイドル</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="fragment_names">
+        <item name="news">ニュース</item>
+        <item name="story">ストーリー</item>
+        <item name="member">メンバー</item>
+        <item name="disco">CD情報</item>
+        <item name="bluelay">BlueRay情報</item>
+    </string-array>
+</resources>

@@ -44,11 +44,18 @@ public class MainActivity extends FragmentActivity
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
         switch (position){
-            case 0:
+            case 1:
+
+            case 2:
+                StoryFragment storyFragment = new StoryFragment();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, storyFragment).commit();
+                break;
+            case 3:
                 MembersFragment membersFragment = new MembersFragment();
                 fragmentManager.beginTransaction()
                     .replace(R.id.container, membersFragment).commit();
-
+                break;
             default:
 
         }
