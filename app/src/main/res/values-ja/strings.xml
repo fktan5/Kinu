@@ -2,7 +2,8 @@
 <resources>
 
     <string name="app_name">スクールアイドル</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">設定</string>
+    <string name="action_about_me">このアプリについて</string>
 
     <string-array name="fragment_names">
         <item name="news">ニュース</item>

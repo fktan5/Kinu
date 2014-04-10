@@ -2,18 +2,19 @@
 <resources>
 
     <string name="app_name">SchoolIdle</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
+    <string name="action_about_me">About...</string>
 
     <string-array name="fragment_name">
-        <item name="member">Members</item>
+        <item name="news">News</item>
         <item name="story">Story</item>
+        <item name="member">Members</item>
         <item name="disco">Discography</item>
         <item name="bluelay">Blue-Ray</item>
     </string-array>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">NavDrawerOpen</string>
+    <string name="navigation_drawer_close">NavDrawerClose</string>
 
 </resources>
