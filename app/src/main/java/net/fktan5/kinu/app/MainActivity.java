@@ -1,6 +1,7 @@
 package net.fktan5.kinu.app;
 
 import android.app.ActionBar;
+import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
@@ -45,7 +46,9 @@ public class MainActivity extends FragmentActivity
         FragmentManager fragmentManager = getSupportFragmentManager();
         switch (position){
             case 0:
-                //news
+                NewsFragment newsFragment = new NewsFragment();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, newsFragment).commit();
                 break;
             case 1:
                 StoryFragment storyFragment = new StoryFragment();
@@ -59,11 +62,13 @@ public class MainActivity extends FragmentActivity
                 break;
 
             case 3:
-                //cd
+                DiscographyFragment discographyFragment = new DiscographyFragment();
+                fragmentManager.beginTransaction()
+                    .replace(R.id.container, discographyFragment).commit();
                 break;
 
             case 4:
-                //bluelay
+
                 break;
             default:
                 break;
@@ -102,14 +107,19 @@ public class MainActivity extends FragmentActivity
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
+        switch (id){
+            case R.id.action_settings:
+                break;
+            case R.id.action_about_me:
+                Intent intentAbout = new Intent(this, AboutActivity.class);
+                startActivity(intentAbout);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
 
     @Override
     public void onFragmentInteraction(Uri uri) {
-        Log.d("kinu", "ofi");
+
     }
 }

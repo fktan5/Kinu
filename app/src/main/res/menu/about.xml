@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="net.fktan5.kinu.app.AboutActivity" >
+
+    <item android:id="@+id/action_aboutshare"
+        android:title="share"
+        android:icon="@android:drawable/ic_menu_share"/>
+</menu>
